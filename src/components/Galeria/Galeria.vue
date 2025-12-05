@@ -1,6 +1,19 @@
 <script setup>
 import Card from '../Card/Card.vue';
+import axios from 'axios';
+import { ref } from 'vue';
 
+const imagens = ref([])
+
+async function pegarImagem() {
+    try {
+        const resposta = await axios.get('https://picsum.photos/v2/list?page=2&limit=15');
+        imagens.value = resposta.data;
+    } catch(error) {
+        console.log('Não foi possível carregar as imagens' + error);    
+    }
+}
+pegarImagem();
 </script>
 
 <template>
@@ -8,7 +21,7 @@ import Card from '../Card/Card.vue';
         <h2>Inspire-se</h2>
 
         <div class="imagens">
-            <Card imagem="https://picsum.photos/300/500" />
+            <Card v-for="img in imagens" :imagem="img.download_url" />
         </div>
     </section>
 </template>
@@ -23,9 +36,9 @@ import Card from '../Card/Card.vue';
 
     .imagens {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 15px;
     }
 }
 </style>

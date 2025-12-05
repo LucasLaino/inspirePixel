@@ -14,9 +14,10 @@ defineProps(['imagem'])
 
 <style scoped lang="scss">
 .card {
-    width: 20vw;
-    height: 50vh;
+    width: 300px;
+    height: 400px;
     position: relative;
+    margin: 0 5px;
 
     button {
         position: absolute;
