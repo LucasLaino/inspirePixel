@@ -9,8 +9,8 @@ async function pegarImagem() {
     try {
         const resposta = await axios.get('https://picsum.photos/v2/list?page=2&limit=15');
         imagens.value = resposta.data;
-    } catch(error) {
-        console.log('Não foi possível carregar as imagens' + error);    
+    } catch (error) {
+        console.log('Não foi possível carregar as imagens' + error);
     }
 }
 pegarImagem();

@@ -35,10 +35,10 @@ import { Icon } from '@iconify/vue';
     </footer>
 
     <section class="redes-sociais">
-        <Icon icon="logos:facebook" width="30" height="30" />
-        <Icon icon="logos:linkedin-icon" width="30" height="30" />
-        <Icon icon="logos:instagram-icon" width="30" height="30" />
-        <Icon icon="logos:x" width="30" height="30" />
+        <Icon icon="logos:facebook" width="24" height="24" />
+        <Icon icon="logos:linkedin-icon" width="24" height="24" />
+        <Icon icon="logos:instagram-icon" width="24" height="24" />
+        <Icon icon="logos:x" width="24" height="24" />
     </section>
 </template>
 

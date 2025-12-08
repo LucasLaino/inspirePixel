@@ -1,5 +1,5 @@
 <script setup>
-import Header from './components/Header/Header.vue'
+import Header from './components/Header/Header.vue';
 import Hero from './components/Hero/Hero.vue';
 import Galeria from './components/Galeria/Galeria.vue';
 import Footer from './components/Footer/Footer.vue';
@@ -11,5 +11,3 @@ import Footer from './components/Footer/Footer.vue';
   <Galeria />
   <Footer />
 </template>
-
-<style scoped lang="scss"></style>

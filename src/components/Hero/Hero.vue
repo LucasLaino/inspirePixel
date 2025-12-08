@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
     <section class="hero">
         <article class="inspiraPixel-infos">
