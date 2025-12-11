@@ -15,12 +15,15 @@ function menuResponsivo() {
         <img src="../../assets/logo-inspirePixel.svg" alt="Logo InspirePixel">
 
         <nav>
+            <Icon icon="material-symbols:search" width="24" height="24" style="color: #262626" class="icone-lupa" />
+
             <div class="mobile-menu" :class="{ 'active': menuAtivo }" @click="menuResponsivo">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            
+
+
             <ul class="header-menu" :class="{ 'active': menuAtivo }">
                 <li><a href="">Início</a></li>
                 <li><a href="">Galeria</a></li>
@@ -39,7 +42,7 @@ function menuResponsivo() {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .header {
-    margin: 0 20px;
+    margin: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,14 +52,27 @@ function menuResponsivo() {
         width: 40px;
     }
 
-    .header-menu {
-        gap: 20px;
+    .icone-lupa {
+        margin-right: 20px;
+    }
+
+    nav {
         display: flex;
         align-items: center;
-        justify-content: center;
 
-        li a {
-            color: #262626;
+        .header-menu {
+            gap: 20px;
+            display: flex;
+            align-items: center;
+
+            li a {
+                color: #262626;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    color: #E1306C;
+                }
+            }
         }
     }
 

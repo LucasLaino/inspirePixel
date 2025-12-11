@@ -18,6 +18,12 @@ defineProps(['imagem'])
     height: 400px;
     position: relative;
     margin: 0 5px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
 
     button {
         position: absolute;

@@ -55,6 +55,11 @@ import { Icon } from '@iconify/vue';
 
     ul li {
         cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            color: #E1306C;
+        }
     }
 
     .form-newsletter {
