@@ -12,27 +12,59 @@
 <style scoped>
 .hero {
     display: flex;
-    margin: 50px 0;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
-    h1 {
-        width: 400px;
-        font-size: 40px;
+    .inspiraPixel-infos {
+        h1 {
+            font-size: 40px;
+            width: 400px;
 
-        span {
-            font-size: 50px;
-            color: #E1306C;
+            span {
+                font-size: 50px;
+                color: #E1306C;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            width: 650px;
         }
     }
 
-    p {
-        width: 680px;
-        font-size: 20px;
-    }
-
     img {
-        width: 25%;
+        width: 25vw;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 20px;
+
+        .inspiraPixel-infos {
+            text-align: center;
+            
+            h1 {
+                font-size: 30px;
+                width: 100vw;
+
+                span {
+                    font-size: 35px;
+                }
+            }
+
+            p {
+                width: 100vw;
+                padding: 30px 0;
+            }
+        }
+
+        img {
+            width: 80vw;
+            padding-top: 30px;
+        }
     }
 }
 </style>

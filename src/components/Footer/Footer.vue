@@ -79,4 +79,11 @@ import { Icon } from '@iconify/vue';
     gap: 20px;
     margin-bottom: 50px;
 }
+
+@media (max-width: 480px) {
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
 </style>
