@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 30px 0;
 
     .inspiraPixel-infos {
         h1 {
@@ -45,7 +46,7 @@
 
         .inspiraPixel-infos {
             text-align: center;
-            
+
             h1 {
                 font-size: 30px;
                 width: 100vw;
@@ -63,7 +64,35 @@
 
         img {
             width: 80vw;
-            padding-top: 30px;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .hero {
+        .inspiraPixel-infos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 50vw;
+
+            h1 {
+                font-size: 25px;
+
+                span {
+                    font-size: 35px;
+                }
+            }
+
+            p {
+                width: 350px;
+                font-size: 16px;
+            }
+        }
+
+        img {
+            width: 40vw;
         }
     }
 }

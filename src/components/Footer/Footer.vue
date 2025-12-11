@@ -80,10 +80,17 @@ import { Icon } from '@iconify/vue';
     margin-bottom: 50px;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 350px) and (max-width: 480px) {
     .footer {
         flex-direction: column;
         gap: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .footer {
+        padding: 80px 20px;
+        font-size: 13px;
     }
 }
 </style>

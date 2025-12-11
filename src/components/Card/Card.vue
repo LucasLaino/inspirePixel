@@ -33,4 +33,11 @@ defineProps(['imagem'])
         height: 100%;
     }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .card {
+        width: 250px;
+        height: 350px;
+    }
+}
 </style>
