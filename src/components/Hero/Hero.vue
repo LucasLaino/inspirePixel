@@ -17,6 +17,10 @@
     padding: 30px 0;
 
     .inspiraPixel-infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         h1 {
             font-size: 40px;
             width: 400px;
@@ -71,10 +75,6 @@
 @media (min-width: 481px) and (max-width: 768px) {
     .hero {
         .inspiraPixel-infos {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
             width: 50vw;
 
             h1 {
@@ -88,6 +88,23 @@
             p {
                 width: 350px;
                 font-size: 16px;
+            }
+        }
+
+        img {
+            width: 40vw;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+    .hero {
+        .inspiraPixel-infos {
+            align-items: center;
+            text-align: center;
+
+            p {
+                width: 400px;
             }
         }
 

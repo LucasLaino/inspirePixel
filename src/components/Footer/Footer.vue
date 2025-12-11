@@ -53,6 +53,10 @@ import { Icon } from '@iconify/vue';
         margin: 10px 0;
     }
 
+    ul li {
+        cursor: pointer;
+    }
+
     .form-newsletter {
         display: flex;
         flex-direction: column;
@@ -69,6 +73,7 @@ import { Icon } from '@iconify/vue';
             color: #FFF;
             padding: 5px;
             border-radius: 5px;
+            cursor: pointer;
         }
     }
 }
@@ -78,6 +83,7 @@ import { Icon } from '@iconify/vue';
     justify-content: center;
     gap: 20px;
     margin-bottom: 50px;
+    cursor: pointer;
 }
 
 @media (min-width: 350px) and (max-width: 480px) {
@@ -91,6 +97,12 @@ import { Icon } from '@iconify/vue';
     .footer {
         padding: 80px 20px;
         font-size: 13px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+    .footer {
+        padding: 80px 25px;
     }
 }
 </style>
